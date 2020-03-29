@@ -1,0 +1,9 @@
+Options -Indexes
+
+SetEnv TZ Asia/Kolkata
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ routes/index.php?q=$1
