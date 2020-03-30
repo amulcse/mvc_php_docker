@@ -10,5 +10,4 @@ define("SERVER_ROOT", "/var/www/html/");
 spl_autoload_register(function ($class_name) {
     include  dirname(__FILE__) . '/../' .str_replace("\\", DIRECTORY_SEPARATOR, $class_name). '.php';
 });
-
 ?>

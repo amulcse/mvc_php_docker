@@ -1,5 +1,5 @@
 <?php
-include_once "../config/sitefunctions.php";
+include_once dirname(__FILE__)."/../config/sitefunctions.php";
 
 $requestURI = explode("?",$_SERVER['REQUEST_URI'])[0];
 
